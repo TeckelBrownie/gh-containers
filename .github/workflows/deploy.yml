@@ -15,13 +15,13 @@ jobs:
       image: node:16
       #env: 
     env:
-      MONGODB_CONNECTION_PROTOCOL: mongodb+srv
-      MONGODB_CLUSTER_ADDRESS: mongodb_anything
+      MONGODB_CONNECTION_PROTOCOL: mongodb
+      MONGODB_CLUSTER_ADDRESS: mongodbanything
       MONGODB_USERNAME: root
       MONGODB_PASSWORD: example
-      PORT: 8080
+      PORT: 27017
     services:
-      mongodb_anything: 
+      mongodbanything: 
         image: mongo
         env: 
           MNONGODB_INITDB_ROOT_USERNAME: root
