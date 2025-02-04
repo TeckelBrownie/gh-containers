@@ -26,6 +26,8 @@ jobs:
         env: 
           MONGODB_INITDB_ROOT_USERNAME: root
           MONGODB_INITDB_ROOT_PASSWORD: example
+        ports:
+          - 8080:8080
     steps:
       - name: Get Code
         uses: actions/checkout@v3
